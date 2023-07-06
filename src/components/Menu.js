@@ -12,8 +12,8 @@ const menuItems = [
 
 export default function Menu() {
     return (
-        <div className="menu animate__animated animate__fadeInDown">
-            <img src={logo} alt="Logo" />
+        <div className="menu flex place-items-center gap-x-8 rounded-b-md px-4 py-2.5 animate__animated animate__fadeInDown">
+            <img src={logo} alt="Logo" className='h-10 rounded-lg border-2 border-slate-300'/>
             {/* <div className='menu-name'>
                 <span>Eleftherios</span>
                 <span>Merkouriou</span>

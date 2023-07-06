@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 
 const App = () => {
     return (
-        <div className='container'>
+        <div className='flex flex-col'>
             <Menu />
             <Components />
             <Footer />

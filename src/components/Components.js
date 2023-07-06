@@ -6,12 +6,12 @@ import Find from "./Find";
 
 export default function Components() {
     return(
-        <>
+        <div className="grid grid-cols-4">
             <About />
             <Skills />
             <Projects />
             <Studies />
             <Find />
-        </>
+        </div>
     );
 }

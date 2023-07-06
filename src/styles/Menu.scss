@@ -1,18 +1,8 @@
 .menu {
-  grid-area: 1 / 1 / 5 / 2;
   background-color: $light-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 30px;
   height: fit-content;
-  border-radius: 40px;
-  position: sticky;
-  align-self: start;
 
   img {
-    border-radius: 20px;
-    margin: 25px 0;
     animation: pulse 3s infinite linear;
   }
 
@@ -33,7 +23,6 @@
     font-size: calc(10px + 2vmin);
     font-family: $lobster;
     position: relative;
-    margin-bottom: 10px;
 
     &::before {
       content: "";
