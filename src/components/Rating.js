@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
-function Rating( {name, icon, rating} ) {
+export default function Rating( {name, icon, rating} ) {
   const full = <FontAwesomeIcon icon={solid("circle")} />;
   const empty = <FontAwesomeIcon icon={regular("circle")} />;
   let starRating = [];
@@ -18,5 +18,3 @@ function Rating( {name, icon, rating} ) {
     </div>
   );
 }
-
-export default Rating;

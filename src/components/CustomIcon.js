@@ -12,4 +12,4 @@ function TauriIcon() {
   );
 }
 
-export {AjaxIcon, TauriIcon};
+export { AjaxIcon, TauriIcon };

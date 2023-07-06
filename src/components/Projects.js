@@ -1,4 +1,4 @@
-function Projects() {
+export default function Projects() {
     return (
       <div id="Projects" className="projects">
         <h1 className="projects-header">
@@ -15,6 +15,3 @@ function Projects() {
       </div>
     );
   }
-  
-  export default Projects;
-  

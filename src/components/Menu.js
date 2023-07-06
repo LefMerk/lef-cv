@@ -1,5 +1,4 @@
 import logo from '../assets/logo.png';
-import { Component } from 'react';
 
 const menuItems = [
     {name: 'About me', link: '#About-Me'},

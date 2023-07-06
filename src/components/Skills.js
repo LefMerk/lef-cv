@@ -58,7 +58,7 @@ const categories = [
   }
 ];
 
-function Skills() {
+export default function Skills() {
 
   return (
     <div id="Skills" className="skills">
@@ -78,6 +78,3 @@ function Skills() {
     </div>
   )
 }
-  
-export default Skills;
-  
