@@ -1,19 +1,13 @@
-import Menu from './Menu';
-import About from './About';
-import Skills from './Skills';
-import Studies from './Studies';
-import Projects from './Projects';
-import Find from './Find';
+import Menu from './components/Menu';
+import Components from './components/Components';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
         <div className='container'>
             <Menu />
-            <About />
-            <Skills />
-            <Projects />
-            <Studies />
-            <Find />
+            <Components />
+            <Footer />
         </div>
     );
 }

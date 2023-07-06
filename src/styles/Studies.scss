@@ -4,7 +4,7 @@
     @include boxNheader;
 
     &::before {
-        background-image: url('../public/studies.jpg');
+        background-image: url('../assets/studies.jpg');
         background-position-y: -240px;
         filter: blur(3px) brightness(0.6);
     }

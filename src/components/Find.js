@@ -2,7 +2,7 @@ import { VscGithub } from "react-icons/vsc";
 import { SiMaildotru } from "react-icons/si";
 import { IoLogoLinkedin } from "react-icons/io";
 
-function Find() {
+export default function Find() {
     return (
       <div id="Find-Me" className="findMe">
         <h1 className="findMe-header">
@@ -29,6 +29,4 @@ function Find() {
       </div>
     );
   }
-  
-  export default Find;
   

@@ -5,7 +5,7 @@
     @include boxNheader;
 
     &::before {
-        background-image: url('../public/find.jpg');
+        background-image: url('../assets/find.jpg');
         filter: blur(3px);
     }
 
