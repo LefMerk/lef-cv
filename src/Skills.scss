@@ -1,0 +1,63 @@
+.skills {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 20px 90px 20px 20px;
+    @include boxNheader;
+
+    &::before {
+        background-image: url('../public/skills.jpg');
+        filter: blur(3px);
+    }
+
+    &-txt {
+        font-size: 1.2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 20px;
+        z-index: 1;
+
+        & > div {
+            flex: 0 50%;
+            max-width: fit-content;
+        }
+    }
+}
+
+.skill {
+
+    &-category {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: rgb(0 0 0 / 60%) 0px 0px 7px;
+        padding: 10px;
+
+        span {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-name {
+        // margin-right: 10px;
+        min-width: 135px;
+    }
+
+    &-rating {
+        svg {
+            width: 15px;
+            height: 15px;
+            margin: 2px;
+        }
+    }
+}
+
+.customIcon {
+    max-width: 18px;
+}

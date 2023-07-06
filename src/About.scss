@@ -1,0 +1,26 @@
+.aboutMe {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 20px 150px 20px 20px;
+    @include boxNheader;
+    
+
+    &::before {
+        background-image: url('../public/about.jpg');
+        background-position-x: bottom;
+        filter: blur(3px);
+    }
+
+    &-txt {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1;
+    }
+
+    p {
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: rgb(0 0 0 / 60%) 0px 0px 7px;
+        padding: 2px;
+    }
+}

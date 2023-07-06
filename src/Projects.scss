@@ -1,0 +1,19 @@
+.projects {
+    grid-area: 3 / 2 / 4 / 3;
+    padding: 20px 150px 20px 20px;
+    @include boxNheader;
+
+    &::before {
+        background-image: url('../public/projects.jpg');
+        filter: blur(3px) brightness(0.6);
+    }
+
+
+    &-txt {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,27 @@
+footer {
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 40px;
+
+    span,
+    a {
+        font-size: 0.8em;
+    }
+
+    a {
+        margin: 0 5px;
+        &:hover {
+            color: $light-hover-color;
+        }
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+}

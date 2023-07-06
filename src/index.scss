@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './node_modules/include-media/dist/_include-media.scss';
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$rubik: 'Rubik', sans-serif;
+$lobster: 'Lobster', cursive;
+
+//colors
+$light-color: #09445f;
+$dark-color: rgba(5, 38, 54, 0.7);
+$light-hover-color: #bef52d;
+$white: #ffffff;
+$bg-header: #e1dede;
+
+//mixins
+@mixin boxNheader {
+  // background-color: $dark-color;
+  color: $white;
+  font-family: $rubik;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  position: relative;
+  height: fit-content;
+
+  &::before {
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    border-radius: 40px;
+    padding: 20px 150px 20px 20px;
+  }
+
+  h1 {
+      font-size: 2.2em;
+      font-family: $lobster;
+      position: absolute;
+      top: 35px;
+      right: -40px;
+      background-color: $bg-header;
+      border-radius: 5px;
+      color: $light-color;
+      padding: 2px 20px;
+  }
+}
+
+@import 'Menu', 
+        'About',
+        'Skills',
+        'Studies',
+        'Projects',
+        'Find',
+        'Footer';
+
+html { 
+  scroll-behavior: smooth;
+  font-variant-ligatures: no-common-ligatures;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root { 
+  padding-top: 50px;
+  background: rgb(190,245,45);
+  background: -moz-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  background: -webkit-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  background: linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bef52d",endColorstr="#bef52d",GradientType=1);
+  scrollbar-width: thin;
+  scrollbar-color: #0A4C95 #C2D2E4;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  // grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  grid-auto-rows: minmax(min-content, max-content);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+//custom scrollbar
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: $light-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $light-hover-color;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px $dark-color;
+}
+
+::-webkit-scrollbar-corner {
+  background: $light-color;
+}
+
+::selection {
+  color: $dark-color;
+  background-color: $light-hover-color;
+}
