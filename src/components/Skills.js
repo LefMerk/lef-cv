@@ -65,7 +65,7 @@ export default function Skills() {
       <h1 className="skills-header">Skills</h1>
       <div className="skills-txt">
         {[...categories].map((category) => 
-          <div className='skill-category'>
+          <div key={category.name} className='skill-category'>
             <span>{category.name}</span>
             {category.skill.map((skill) => 
               <div className="skill-item">

@@ -1,12 +1,9 @@
 .aboutMe {
-    grid-area: 1 / 2 / 2 / 3;
-    padding: 20px 150px 20px 20px;
     @include boxNheader;
     
-
     &::before {
         background-image: url('../assets/about.jpg');
-        background-position-x: bottom;
+        background-position-y: center;
         filter: blur(3px);
     }
 

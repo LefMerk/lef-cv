@@ -1,17 +1,17 @@
 const about = [
-  "Hi there, my name is Eleftherios Merkouriou and I'm Front End Developer from Greece.",
-  "For this website, I used React JS, SASS with custom CSS using Flexbox & Grid. The UI design is mine."
+  {id: 1, txt: "Hi there, my name is Eleftherios Merkouriou and I'm Front End Developer from Greece."},
+  {id: 2, txt: "For this website, I used React JS, SASS with custom CSS using Flexbox & Grid. The UI design is mine."}
 ];
 
 export default function About() {
 
   return (
-    <div id="About-Me" className="aboutMe animate__animated animate__fadeIn animate__delay-1s">
-      <h1 className="aboutMe-header animate__animated animate__fadeInRight animate__delay-2s">
+    <div id="About-Me" className="aboutMe">
+      <h1 className="aboutMe-header">
         About me
       </h1>
       <div className="aboutMe-txt">
-        {about.map((paragraph) => <p key={paragraph.key}>{paragraph}</p>)}
+        {about.map((paragraph) => <p key={paragraph.id}>{paragraph.txt}</p>)}
       </div>
     </div>
   );

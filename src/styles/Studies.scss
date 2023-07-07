@@ -1,11 +1,9 @@
 .studies {
-    grid-area: 4 / 2 / 5 / 3;
-    padding: 20px 150px 20px 20px;
     @include boxNheader;
 
     &::before {
         background-image: url('../assets/studies.jpg');
-        background-position-y: -240px;
+        background-position-y: bottom;
         filter: blur(3px) brightness(0.6);
     }
 

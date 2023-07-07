@@ -6,8 +6,11 @@
 
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 $rubik: 'Rubik', sans-serif;
 $lobster: 'Lobster', cursive;
+$nunito: 'Nunito', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
 
 //colors
 $light-color: #09445f;
@@ -23,9 +26,11 @@ $bg-header: #e1dede;
   font-family: $rubik;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   border-radius: 40px;
   position: relative;
-  height: fit-content;
+  padding: 20px;
+  width: 100%;
 
   &::before {
     content: '';
@@ -37,20 +42,23 @@ $bg-header: #e1dede;
     z-index: 0;
     top: 0;
     left: 0;
-    border-radius: 40px;
-    padding: 20px 150px 20px 20px;
+    // border-radius: 40px;
+    padding: 20px;
   }
 
   h1 {
-      font-size: 2.2em;
+      font-size: 2em;
       font-family: $lobster;
-      position: absolute;
-      top: 35px;
-      right: -40px;
+      // position: absolute;
+      // top: 35px;
+      // right: -40px;
       background-color: $bg-header;
       border-radius: 5px;
       color: $light-color;
-      padding: 2px 20px;
+      padding: 1px 10px;
+      z-index: 1;
+      width: fit-content;
+      margin-bottom: 10px;
   }
 }
 
@@ -77,11 +85,12 @@ body {
 }
 
 #root { 
-  background: rgb(190,245,45);
-  background: -moz-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
-  background: -webkit-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
-  background: linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bef52d",endColorstr="#bef52d",GradientType=1);
+  background-color: $light-color;
+  // background: rgb(190,245,45);
+  // background: -moz-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  // background: -webkit-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  // background: linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bef52d",endColorstr="#bef52d",GradientType=1);
   scrollbar-width: thin;
   scrollbar-color: #0A4C95 #C2D2E4;
   overflow-x: hidden;

@@ -1,6 +1,4 @@
 .skills {
-    grid-area: 2 / 2 / 3 / 3;
-    padding: 20px 90px 20px 20px;
     @include boxNheader;
 
     &::before {
