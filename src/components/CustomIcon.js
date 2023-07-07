@@ -1,14 +1,14 @@
 function AjaxIcon() {
 
   return (
-      <img className="customIcon" src="./ajax.svg" alt="ajax-logo" />
+      <img className="customIcon" src="../assets/ajax.svg" alt="ajax-logo" />
   );
 }
 
 function TauriIcon() {
 
   return (
-      <img className="customIcon" src="./tauri.svg" alt="tauri-logo" />
+      <img className="customIcon" src="../assets/tauri.svg" alt="tauri-logo" />
   );
 }
 
