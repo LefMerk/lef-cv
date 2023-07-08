@@ -20,14 +20,22 @@ export default function Menu() {
     };
 
     return (
-        <div className="menu flex items-center rounded-b-md px-4 py-4 animate__animated animate__fadeInDown">
-            <img src={logo} alt="Logo" className='h-10 rounded-lg border-2 border-slate-300'/>
-            <div className='flex items-center justify-center grow gap-x-8'>
-                {menuItems.map((menuItem) => 
-                    <a key={menuItem.name} className={menuItem.name === state ? 'selected' : ''} onClick={()=>handleMenu(menuItem.name)}>
-                        {menuItem.text}
-                    </a>)
-                }
+        <div className="menu animate__animated animate__fadeInDown">
+            <div className="max-w-6xl mx-auto px-4 py-6">
+                <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center">
+                    <img src={logo} alt="Logo" className='h-10 rounded-lg border-2 border-slate-300'/>
+                    <div className='flex flex-col text-slate-50 ml-3'>
+                        <div className="font-semibold text-lg">Eleftherios Merkouriou</div>
+                        <div className="font-light">Front End Developer</div>
+                    </div>
+                    <div className='flex items-center justify-end grow gap-x-8 text-xl'>
+                        {menuItems.map((menuItem) => 
+                            <a key={menuItem.name} className={menuItem.name === state ? 'selected' : ''} onClick={()=>handleMenu(menuItem.name)}>
+                                {menuItem.text}
+                            </a>)
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     );

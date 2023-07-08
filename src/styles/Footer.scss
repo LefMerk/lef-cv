@@ -1,9 +1,6 @@
 footer {
-    background-color: $light-color;
+    background-color: $dark-bg;
     color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px 0;
 
     span,
@@ -12,16 +9,15 @@ footer {
     }
 
     a {
-        margin: 0 5px;
         &:hover {
             color: $light-hover-color;
         }
     }
 
     svg {
-        width: 20px;
-        height: 20px;
-        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        //margin: 0 5px;
     }
 
 }

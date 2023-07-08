@@ -2,8 +2,8 @@
     @include boxNheader;
 
     &::before {
-        background-image: url('../assets/skills.jpg');
-        filter: blur(3px);
+        // background-image: url('../assets/skills.jpg');
+        // filter: blur(3px);
     }
 
     &-txt {

@@ -2,9 +2,9 @@
     @include boxNheader;
 
     &::before {
-        background-image: url('../assets/studies.jpg');
-        background-position-y: bottom;
-        filter: blur(3px) brightness(0.6);
+        // background-image: url('../assets/studies.jpg');
+        // background-position-y: bottom;
+        // filter: blur(3px) brightness(0.6);
     }
 
     &-txt {

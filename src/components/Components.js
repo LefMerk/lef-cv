@@ -25,7 +25,9 @@ export default function Components() {
     
     return(
         <div className="flex flex-wrap flex-1">
-            {visibleComponent()}
+            <div className="max-w-6xl mx-auto py-6">
+                {visibleComponent()}
+            </div>
         </div>
     );
 }
