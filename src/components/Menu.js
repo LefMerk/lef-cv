@@ -7,7 +7,7 @@ const menuItems = [
     {name: 'skills', text: 'Skills', link: '#Skills'},
     {name: 'projects', text: 'Projects', link: '#Projects'},
     {name: 'studies', text: 'Studies', link: '#Studies'},
-    {name: 'find', text: 'Find me', link: '#Find-Me'}
+    //{name: 'find', text: 'Find me', link: '#Find-Me'}
 ];
 
 //const menu = menuItems.map((menuItem) => <a key={menuItem.name} href={menuItem.link}>{menuItem.name}</a>);
