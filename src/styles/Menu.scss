@@ -105,3 +105,11 @@
   }
 
 }
+
+.experience {
+  a:hover {
+    span {
+      color: $light-hover-color;
+    }
+  }
+}

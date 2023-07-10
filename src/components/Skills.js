@@ -13,7 +13,7 @@ const categories = [
       {name: 'jQuery', icon: <DiJqueryLogo />, rating: 5},
       {name: 'AJAX', icon: <AjaxIcon />, rating: 5},
       {name: 'Vue JS', icon: <SiVuedotjs />, rating: 2},
-      {name: 'React', icon: <SiReact />, rating: 2}
+      {name: 'React', icon: <SiReact />, rating: 4}
     ]
   },
   {
@@ -23,7 +23,7 @@ const categories = [
       {name: 'CSS', icon: <DiCss3 />, rating: 5},
       {name: 'SASS', icon: <DiSass />, rating: 4},
       {name: 'Bootstrap', icon: <SiBootstrap />, rating: 4},
-      {name: 'Tailwind', icon: <SiTailwindcss />, rating: 3}
+      {name: 'Tailwind', icon: <SiTailwindcss />, rating: 4}
     ]
   },
   {
@@ -45,7 +45,7 @@ const categories = [
   {
     name:'Version Control', 
     skill: [
-      {name: 'Git', icon: <SiGit />, rating: 3},
+      {name: 'Git', icon: <SiGit />, rating: 4},
       {name: 'SVN', icon: <SiSubversion />, rating: 5}
     ]
   },

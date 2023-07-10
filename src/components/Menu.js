@@ -5,7 +5,8 @@ import logo from '../assets/logo.png';
 const menuItems = [
     {name: 'about', text: 'About me', link: '#About-Me'},
     {name: 'skills', text: 'Skills', link: '#Skills'},
-    {name: 'projects', text: 'Projects', link: '#Projects'},
+    {name: 'experience', text: 'Experience', link: '#Experience'},
+    //{name: 'projects', text: 'Projects', link: '#Projects'},
     {name: 'studies', text: 'Studies', link: '#Studies'},
     //{name: 'find', text: 'Find me', link: '#Find-Me'}
 ];
@@ -22,7 +23,7 @@ export default function Menu() {
     return (
         <div className="menu animate__animated animate__fadeInDown">
             <div className="max-w-6xl mx-auto px-4 py-6">
-                <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center">
+                <div className="flex space-y-0 flex-row justify-between items-center">
                     <img src={logo} alt="Logo" className='h-10 rounded-lg border-2 border-slate-300'/>
                     <div className='flex flex-col text-slate-50 ml-3'>
                         <div className="font-semibold text-lg">Eleftherios Merkouriou</div>

@@ -1,5 +1,6 @@
 import About from "./About";
 import Skills from "./Skills";
+import Experience from "./Experience";
 import Studies from "./Studies";
 import Projects from "./Projects";
 import Find from "./Find";
@@ -20,6 +21,8 @@ export default function Components() {
                 return <Studies />;
             case 'find':
                 return <Find />;
+            case 'experience':
+                return <Experience />;
         }
     };
     
