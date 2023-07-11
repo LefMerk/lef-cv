@@ -31,7 +31,7 @@ export default function Studies() {
             <div className='flex flex-col text-base'>
               <div className='font-medium'>{study.title}</div>
               <a href={study.link} target='_blank' rel="noreferrer nofollow">
-                <div><span>{study.name}</span></div>
+                <div>{study.name}</div>
               </a>
               <div className='italic'>{study.duration}</div>
             </div>

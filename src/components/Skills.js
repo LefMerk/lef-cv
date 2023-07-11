@@ -10,10 +10,10 @@ const categories = [
     name:'Coding', 
     skill: [
       {name: 'JavaScript', icon: <SiJavascript />, rating: 5},
+      {name: 'React', icon: <SiReact />, rating: 4},
+      {name: 'Vue JS', icon: <SiVuedotjs />, rating: 2}, 
       {name: 'jQuery', icon: <DiJqueryLogo />, rating: 5},
       {name: 'AJAX', icon: <AjaxIcon />, rating: 5},
-      {name: 'Vue JS', icon: <SiVuedotjs />, rating: 2},
-      {name: 'React', icon: <SiReact />, rating: 4}
     ]
   },
   {

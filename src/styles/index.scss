@@ -20,13 +20,12 @@ $urbanist: 'Urbanist', sans-serif;
 //colors
 $light-color: #09445f;
 $dark-color: rgba(5, 38, 54, 0.7);
-$dark-bg: #1B2430; //alternative: #0B2447
+$dark-bg: #001C30; //alternative: #0B2447
 $light-hover-color: #bef52d;
 $white: #ffffff;
 $bg-header: #e1dede;
 
 @import 'Menu', 
-        'Skills',
         'Footer';
 
 html { 
@@ -65,7 +64,7 @@ h1 {
 .experience,
 .studies {
   a:hover {
-    span {
+    div {
       color: $light-hover-color;
     }
   }
