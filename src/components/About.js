@@ -7,9 +7,6 @@ export default function About() {
 
   return (
     <div id="About-Me" className="aboutMe">
-      <h1 className="aboutMe-header">
-        About me
-      </h1>
       <div className="aboutMe-txt">
         {about.map((paragraph) => <p key={paragraph.id}>{paragraph.txt}</p>)}
       </div>

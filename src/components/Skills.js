@@ -62,15 +62,12 @@ export default function Skills() {
 
   return (
     <div id="Skills" className="skills">
-      <h1 className="skills-header">Skills</h1>
-      <div className="skills-txt">
-        {[...categories].map((category) => 
-          <div key={category.name} className='skill-category'>
-            <span>{category.name}</span>
+      <div className="flex flex-wrap justify-evenly gap-5 text-sm text-white z-10">
+        {categories.map((category) => 
+          <div key={category.name} className='max-w-fit flex flex-col p-4 gap-2 border rounded-xl border-slate-600'>
+            <span className='mb-2.5 font-semibold text-lg'>{category.name}</span>
             {category.skill.map((skill) => 
-              <div className="skill-item">
-                <Rating name={skill.name} icon={skill.icon} rating={skill.rating} />
-              </div>
+              <Rating name={skill.name} icon={skill.icon} rating={skill.rating} />
             )}
           </div>
         )}

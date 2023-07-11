@@ -28,7 +28,10 @@ export default function Components() {
     
     return(
         <div className="flex flex-wrap flex-1">
-            <div className="max-w-6xl mx-auto py-6">
+            <div className="max-w-6xl w-full mx-auto py-6">
+                <h1 className="font-bold text-gray-500 text-7xl mb-8">
+                    {state.charAt(0).toUpperCase() + state.slice(1)}
+                </h1>
                 {visibleComponent()}
             </div>
         </div>

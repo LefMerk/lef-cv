@@ -11,10 +11,10 @@ export default function Rating( {name, icon, rating} ) {
   }
 
   return (
-    <div className="skill-item">
+    <div className="flex flex-initial items-center gap-2.5 text-base">
       {icon}
-      <div className="skill-name">{name}</div>
-      <div className="skill-rating">{starRating}</div>
+      <div className="w-36">{name}</div>
+      <div className="flex gap-1 m-0.5">{starRating}</div>
     </div>
   );
 }

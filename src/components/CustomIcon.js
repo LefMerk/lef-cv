@@ -4,14 +4,14 @@ import tauri from '../assets/tauri.svg';
 function AjaxIcon() {
 
   return (
-      <img className="customIcon" src={ajax} alt="ajax-logo" />
+      <img className="w-4" src={ajax} alt="ajax-logo" />
   );
 }
 
 function TauriIcon() {
 
   return (
-      <img className="customIcon" src={tauri} alt="tauri-logo" />
+      <img className="w-4" src={tauri} alt="tauri-logo" />
   );
 }
 
