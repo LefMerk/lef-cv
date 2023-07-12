@@ -57,10 +57,10 @@ export default function Experience() {
 
     return (
         <div className="experience">
-            <div>
+            <div className="flex flex-col items-center gap-y-5 xs:gap-y-0">
                 {experience.map((exp, i, {length}) => 
                     <div className="flex flex-col items-center">
-                        <div key={exp.id} className="w-96 flex flex-col rounded-2xl border-slate-300 border-2 p-4">
+                        <div key={exp.id} className="w-96 flex flex-col xs:rounded-2xl xs:border-slate-300 xs:border-2 p-4">
                             <div className="right-4 font-semibold text-slate-300 text-md text-end italic">{exp.duration}</div>
                             <div className='flex items-center text-white mb-2'>
                                 <a className="basis-1/6" href={exp.link} target='_blank' rel="noreferrer nofollow">
@@ -84,7 +84,8 @@ export default function Experience() {
                                 </div>
                             </div>
                         </div>
-                        {!(length - 1 === i) && <div class="h-12 w-0.5 bg-slate-300"></div>}
+                        {!(length - 1 === i) && <div class="h-12 w-0.5 bg-slate-300 hidden xs:flex"></div>}
+                        {!(length - 1 === i) && <div class="h-0.5 w-full bg-slate-300 flex mt-6 xs:hidden"></div>}
                     </div>
                 )}
             </div>
