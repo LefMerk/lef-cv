@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer className="font-medium animate__animated animate__fadeInUp">
             <div className="max-w-6xl mx-auto px-4 py-6">
-                <div class="h-0.5 w-full bg-gray-700 md:mb-5"></div>
+                <div className="h-0.5 w-full bg-gray-700 md:mb-5"></div>
                 <div className="flex flex-col-reverse space-y-4 md:space-y-1 md:flex-row justify-between items-center gap-3">
                     <div>
                         <span>&copy; {new Date().getFullYear()} Eleftherios Merkouriou</span>

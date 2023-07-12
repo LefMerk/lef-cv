@@ -15,7 +15,6 @@ const menuItems = [
 
 export default function Menu() {
     const { state, dispatch } = useContext(ComponentContext);
-    const [showMenu, setShowMenu] = useState(false);
 
     const handleMenu = (name) => {
         dispatch(name);
@@ -23,7 +22,6 @@ export default function Menu() {
 
     return (
         <div className="menu animate__animated animate__fadeInDown">
-            {showMenu && <div className='fixed h-full w-1/2 bg-slate-800'>test</div>}
             <div className="max-w-6xl mx-auto px-4 py-6">
                 <div className="flex space-y-0 flex-col md:flex-row justify-between items-center">
                     <img src={logo} alt="Logo" className='h-10 rounded-lg border-2 border-slate-300'/>
