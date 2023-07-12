@@ -70,6 +70,12 @@ h1 {
   }
 }
 
+.about {
+  svg {
+    color: $light-hover-color;
+  }
+}
+
 //custom scrollbar
 ::-webkit-scrollbar {
   height: 12px;

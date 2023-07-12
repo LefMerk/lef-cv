@@ -4,11 +4,15 @@ export default function About() {
   const about = [
     {
       id: 1, 
-      txt: "Hi there, my name is Eleftherios Merkouriou and I'm a Front End Developer from Greece."
+      txt: "Hi there, my name is Eleftherios Merkouriou"
     },
     {
-      id: 2, 
-      txt: "I made this with React, Tailwind, SASS."
+      id: 2,
+      txt: "and I'm a Front End Developer from Greece."
+    },
+    {
+      id: 3, 
+      txt: "I made this with React & Tailwind."
     }
   ];
 
@@ -23,11 +27,11 @@ export default function About() {
 
   return (
     <div id="About" className="about text-white px-4 flex flex-col gap-y-20">
-      <div className="text-lg flex flex-col gap-y-5 items-end mr-20">
+      <div className="text-lg flex flex-col gap-y-5 items-center md:items-end md:mr-20">
         <PiHandWavingDuotone className="text-2xl"/>
-        {about.map((paragraph) => <p key={paragraph.id}>{paragraph.txt}</p>)}
+        {about.map((paragraph) => <p key={paragraph.id} className="text-center md:text-right">{paragraph.txt}</p>)}
       </div>
-      <div className="flex flex-col border rounded-xl border-slate-600 p-5 max-w-fit ml-20">
+      <div className="flex flex-col border rounded-xl border-slate-600 p-5 max-w-fit md:ml-20 m-auto">
         <div className="font-medium text-2xl mb-3">Some infos...</div>
         {personalInfo.map((info, i) =>
           <div key={i} className="ml-3 mb-3">

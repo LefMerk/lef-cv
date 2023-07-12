@@ -7,6 +7,18 @@ import focus from '../assets/focus.png';
 export default function Experience() {
     const experience = [
         {
+            id: 'hedno',
+            img: hedno,
+            name: 'Hellenic Electricity Distribution Network Operator S.A. (HEDNO)',
+            link: 'https://deddie.gr/en/',
+            duration: 'Nov 2022 - Present', 
+            job: 'Front End Developer', 
+            tasks: [
+                {id: 1, text: 'SAV Project'},
+                {id: 2, text: 'Web application for APE or SITHIA station'}
+            ]
+        },
+        {
             id: 'upcom',
             img: upcom,
             name: 'UpcoMinds S.A.',
@@ -18,18 +30,6 @@ export default function Experience() {
             ]
         },
         {
-            id: 'hedno',
-            img: hedno,
-            name: 'Hellenic Electricity Distribution Network Operator S.A. (HEDNO)',
-            link: 'https://deddie.gr/en/',
-            duration: 'Nov 2022 - Present', 
-            job: 'Front End Developer', 
-            tasks: [
-                {id: 1, text: 'APE'},
-                {id: 2, text: 'SAV Project'}
-            ]
-        },
-        {
             id: 'prime',
             img: prime,
             name: 'Prime Educational Software Applications',
@@ -37,8 +37,9 @@ export default function Experience() {
             duration: 'Jul 2020 - Nov 2022', 
             job: 'Lead Front End Developer', 
             tasks: [
-                {id: 1, text: 'APE'},
-                {id: 2, text: 'SAV Project'}
+                {id: 1, text: 'All MM Educational Group websites'},
+                {id: 2, text: 'Frontend team guidance'},
+                {id: 3, text: 'Frontend tasks & projects assignment'}
             ]
         },
         {
@@ -49,8 +50,8 @@ export default function Experience() {
             duration: 'Mar 2015 - Jul 2020', 
             job: 'Front End Developer', 
             tasks: [
-                {id: 1, text: 'APE'},
-                {id: 2, text: 'SAV Project'}
+                {id: 1, text: 'Educational HTML Games'},
+                {id: 2, text: 'Interactive WhiteBoards (IWB) - Educational Software'}
             ]
         },
     ];
