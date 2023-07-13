@@ -13,8 +13,8 @@ import ajax from './assets/ajax.svg';
 import tauri from './assets/tauri.svg';
 
 export const ComponentContext = createContext();
-console.log(process.env.GA_ID);
-ReactGA.initialize(process.env.GA_ID);
+console.log(process.env.REACT_APP_GA_ID);
+ReactGA.initialize(process.env.REACT_APP_GA_ID);
 
 const App = () => {
     const [state, dispatch] = useState('about');
