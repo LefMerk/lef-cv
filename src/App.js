@@ -1,9 +1,12 @@
 import { createContext, useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
 import Menu from './components/Menu';
 import Components from './components/Components';
 import Footer from './components/Footer';
 
 export const ComponentContext = createContext();
+
+ReactGA.initialize('G-0TEJFQJ3LQ');
 
 const App = () => {
     const [state, dispatch] = useState('about');
@@ -16,6 +19,7 @@ const App = () => {
     ];
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
         for (const image of images) {
             const imageElement = new Image();
             imageElement.src = image;
