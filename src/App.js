@@ -3,6 +3,14 @@ import ReactGA from 'react-ga';
 import Menu from './components/Menu';
 import Components from './components/Components';
 import Footer from './components/Footer';
+import prime from './assets/about.jpg';
+import logo from './assets/logo.png';
+import upcom from './assets/upcom.png';
+import hedno from './assets/hedno.png';
+import focus from './assets/focus.png';
+import unipi from './assets/unipi.png';
+import ajax from './assets/ajax.svg';
+import tauri from './assets/tauri.svg';
 
 export const ComponentContext = createContext();
 const GA_ID =process.env.GA_ID;
@@ -11,14 +19,7 @@ ReactGA.initialize(GA_ID);
 const App = () => {
     const [state, dispatch] = useState('about');
     const images = [
-        './assets/ajax.svg',
-        './assets/focus.png',
-        './assets/hedno.png',
-        './assets/logo.png',
-        './assets/prime.png',
-        './assets/tauri.svg',
-        './assets/unipi.png',
-        './assets/upcom.png'
+        ajax, focus, hedno, logo, prime, tauri, unipi, upcom
     ];
 
     useEffect(() => {
