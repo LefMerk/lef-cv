@@ -5,8 +5,8 @@ import Components from './components/Components';
 import Footer from './components/Footer';
 
 export const ComponentContext = createContext();
-
-ReactGA.initialize('G-0TEJFQJ3LQ');
+const GA_ID =process.env.GA_ID;
+ReactGA.initialize(GA_ID);
 
 const App = () => {
     const [state, dispatch] = useState('about');
