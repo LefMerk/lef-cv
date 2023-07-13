@@ -11,11 +11,14 @@ ReactGA.initialize(GA_ID);
 const App = () => {
     const [state, dispatch] = useState('about');
     const images = [
-        'assets/about.jpg',
-        'assets/projects.jpg',
-        'assets/find.jpg',
-        'assets/skills.jpg',
-        'assets/studies.jpg'
+        'assets/ajax.svg',
+        'assets/focus.png',
+        'assets/hedno.png',
+        'assets/logo.png',
+        'assets/prime.png',
+        'assets/tauri.svg',
+        'assets/unipi.png',
+        'assets/upcom.png'
     ];
 
     useEffect(() => {
