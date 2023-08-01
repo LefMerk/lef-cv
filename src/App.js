@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import Menu from './components/Menu';
 import Components from './components/Components';
 import Footer from './components/Footer';
@@ -23,7 +23,8 @@ const App = () => {
     ];
 
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        //ReactGA.pageview(window.location.pathname + window.location.search);
+        //ReactGA.send({hitType: "pageview", page: window.location.pathname });
         for (const image of images) {
             const imageElement = new Image();
             imageElement.src = image;
