@@ -21,9 +21,9 @@ const categories = [
     skill: [
       {name: 'HTML', icon: <DiHtml5 />, rating: 5},
       {name: 'CSS', icon: <DiCss3 />, rating: 5},
-      {name: 'SASS', icon: <DiSass />, rating: 4},
-      {name: 'Bootstrap', icon: <SiBootstrap />, rating: 4},
-      {name: 'Tailwind', icon: <SiTailwindcss />, rating: 4}
+      {name: 'SASS', icon: <DiSass />, rating: 5},
+      {name: 'Bootstrap', icon: <SiBootstrap />, rating: 5},
+      {name: 'Tailwind', icon: <SiTailwindcss />, rating: 5}
     ]
   },
   {
@@ -38,14 +38,14 @@ const categories = [
     name:'Adobe Software', 
     skill: [
       {name: 'Photoshop', icon: <SiAdobephotoshop />, rating: 4},
-      {name: 'Illustrator', icon: <SiAdobeillustrator />, rating: 3},
+      {name: 'Illustrator', icon: <SiAdobeillustrator />, rating: 2},
       {name: 'XD', icon: <SiAdobexd />, rating: 4}
     ]
   },
   {
     name:'Version Control', 
     skill: [
-      {name: 'Git', icon: <SiGit />, rating: 4},
+      {name: 'Git', icon: <SiGit />, rating: 5},
       {name: 'SVN', icon: <SiSubversion />, rating: 5}
     ]
   },
