@@ -1,4 +1,5 @@
-import { PiBuildingsDuotone, PiGlobeHemisphereWestDuotone, PiCakeDuotone, PiHandWavingDuotone } from "react-icons/pi";
+import { PiBuildingsDuotone, PiGlobeHemisphereWestDuotone, PiCakeDuotone, PiHandWavingDuotone, PiAirplaneTiltBold } from "react-icons/pi";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 export default function About() {
   const about = [
@@ -46,6 +47,19 @@ export default function About() {
             </div>
           </div>
         )}
+      </div>
+      <div className="flex gap-x-2 text-center justify-end md:mr-20">
+        <span class="fi fi-gr"></span>
+        <span class="fi fi-it"></span>
+        <span class="fi fi-fr"></span>
+        <span class="fi fi-tr"></span>
+        <span class="fi fi-bg"></span>
+        <span class="fi fi-nl"></span>
+        <span class="fi fi-hu"></span>
+        <span class="fi fi-at"></span>     
+        <span class="fi fi-fi"></span>
+        <span class="fi fi-ee"></span>
+        <PiAirplaneTiltBold className="text-2xl ml-3" />
       </div>
     </div>
   );
