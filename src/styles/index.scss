@@ -97,3 +97,10 @@ h1 {
   color: $dark-color;
   background-color: $light-hover-color;
 }
+
+//cookies
+#cookiescript_badge,
+#cookiescript_injected {
+  bottom: 105px !important;
+  border: 2px solid $light-hover-color;
+}

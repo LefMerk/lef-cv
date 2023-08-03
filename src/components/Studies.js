@@ -25,7 +25,7 @@ export default function Studies() {
       <div className="text-white">
         {studies.map(study =>
           <div key={study.id} className="flex flex-col md:flex-row items-center gap-5 mb-10 ml-2 md:ml-10">
-            <div className="w-24 z-10 relative">
+            <div className="w-20 z-10 relative">
               <img className="shrink-0 drop-shadow-[0_0_7px_rgba(255,255,255,0.7)]" src={study.img} alt="unipi"/>
             </div>
             <div className='flex flex-col items-center md:items-start text-base'>
