@@ -33,7 +33,7 @@ export default function Experience() {
             id: 'prime',
             img: prime,
             name: 'Prime Educational Software Applications',
-            link: 'https://primesoftapps.com/',
+            link: 'http://primesoftapps.com/',
             duration: 'Jul 2020 - Nov 2022', 
             job: 'Lead Front End Developer', 
             tasks: [
