@@ -3,9 +3,7 @@ import {
   PiGlobeHemisphereWestDuotone, 
   PiCakeDuotone, 
   PiHandWavingDuotone, 
-  PiAirplaneTiltBold,
-  PiBarbellBold,
-  PiThumbsUpBold
+  PiAirplaneTiltBold
 } from "react-icons/pi";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
@@ -19,11 +17,7 @@ export default function About() {
       id: 2,
       txt: `and I'm a Front End Developer from Greece`,
       icon: <span class="fi fi-gr"></span>
-    },
-    // {
-    //   id: 3, 
-    //   txt: "I made this with React & Tailwind."
-    // }
+    }
   ];
 
   const personalInfo = [
@@ -46,7 +40,8 @@ export default function About() {
                 <span class="fi fi-hu"></span>
               </div>
               <div className="flex gap-2">
-                <span class="fi fi-at"></span>     
+                <span class="fi fi-at"></span>
+                <span class="fi fi-sk"></span>   
                 <span class="fi fi-fi"></span>
                 <span class="fi fi-ee"></span>
               </div>
