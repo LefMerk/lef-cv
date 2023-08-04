@@ -21,32 +21,21 @@ export default function About() {
   ];
 
   const personalInfo = [
-    {txt: 'Athens Metropolitan Area', icon: <PiBuildingsDuotone/>},
-    {txt: '20 Sep 1990', icon: <PiCakeDuotone/>},
+    {
+      icon: <PiBuildingsDuotone/>, 
+      txt: 'Athens Metropolitan Area'
+    },
+    {
+      icon: <PiCakeDuotone/>,
+      txt: '20 Sep 1990'},
     { 
+      icon: <PiGlobeHemisphereWestDuotone/>,
       txt: 'Languages:', 
-      icon: <PiGlobeHemisphereWestDuotone/>, 
       languages: ['Greek (Native)', 'English (Proficient)', 'French (B1, but a bit rusty)']
     },
     {
-      txt: <div className="flex flex-col gap-2 text-center mt-1">
-              <div className="flex gap-2">
-                <span class="fi fi-it"></span>
-                <span class="fi fi-va"></span>
-                <span class="fi fi-fr"></span>
-                <span class="fi fi-tr"></span>
-                <span class="fi fi-bg"></span>
-                <span class="fi fi-nl"></span>
-                <span class="fi fi-hu"></span>
-              </div>
-              <div className="flex gap-2">
-                <span class="fi fi-at"></span>
-                <span class="fi fi-sk"></span>   
-                <span class="fi fi-fi"></span>
-                <span class="fi fi-ee"></span>
-              </div>
-            </div>, 
-      icon: <PiAirplaneTiltBold/>
+      icon: <PiAirplaneTiltBold/>,
+      countries: ['fr', 'it', 'va', 'tr', 'bg', 'nl', 'hu', 'at', 'sk', 'fi', 'ee']
     }
   ];
 
@@ -62,29 +51,21 @@ export default function About() {
           <div key={i} className="ml-3 mb-3">
             <div className="flex items-center gap-x-2">
               <div className="text-2xl self-start">{info.icon}</div>
-              <div>{info.txt}</div>
+              {info.txt && <div>{info.txt}</div>}
+              {info.countries && 
+                <div className="flex flex-wrap gap-2 text-center mt-1 w-52">
+                    {info.countries.map((country, y) => <span key={y} className={"fi fi-" + country}></span>)}
+                </div>
+              }
             </div>
-            <div className="flex flex-col pl-10">
-              {info.languages && info.languages.map((language, x) =>
-                  <div key={x}>{language}</div>
-              )}
-            </div>
+            {info.languages && 
+              <div className="flex flex-col pl-10">
+                {info.languages.map((language, x) => <div key={x}>{language}</div>)}
+              </div>
+            }
           </div>
         )}
       </div>
-      {/* <div className="flex gap-x-2 text-center justify-end md:mr-20">
-        <span class="fi fi-gr"></span>
-        <span class="fi fi-it"></span>
-        <span class="fi fi-fr"></span>
-        <span class="fi fi-tr"></span>
-        <span class="fi fi-bg"></span>
-        <span class="fi fi-nl"></span>
-        <span class="fi fi-hu"></span>
-        <span class="fi fi-at"></span>     
-        <span class="fi fi-fi"></span>
-        <span class="fi fi-ee"></span>
-        <PiAirplaneTiltBold className="text-2xl ml-3" />
-      </div> */}
     </div>
   );
 
