@@ -11,12 +11,20 @@ export default function About() {
   const about = [
     {
       id: 1, 
-      txt: "Hi there, my name is Eleftherios Merkouriou"
+      txt: "Hi there! My name is Eleftherios Merkouriou,"
     },
     {
-      id: 2,
-      txt: `and I'm a Front End Developer from Greece`,
-      icon: <span class="fi fi-gr"></span>
+      id: 2, 
+      txt: "Ελευθέριος Μερκουρίου in Greek."
+    },
+    {
+      id: 3,
+      txt: "I'm a Frontend Developer from Greece",
+      //icon: <span class="fi fi-gr"></span>
+    },
+    {
+      id: 4,
+      txt: "and I love creating with React JS.",
     }
   ];
 
@@ -40,8 +48,8 @@ export default function About() {
   ];
 
   return (
-    <div id="About" className="about text-white px-4 flex flex-col gap-y-20">
-      <div className="text-lg flex flex-col gap-y-5 items-center md:items-end md:mr-20">
+    <div id="About" className="about text-white px-4 flex flex-col gap-y-14">
+      <div className="text-lg flex flex-col gap-y-2 items-center md:items-end md:mr-20">
         <PiHandWavingDuotone className="text-2xl"/>
         {about.map((paragraph) => <p key={paragraph.id} className="text-center md:text-right">{paragraph.txt} {paragraph.icon ? paragraph.icon : ''}</p>)}
       </div>
