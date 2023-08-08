@@ -9,23 +9,10 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 export default function About() {
   const about = [
-    {
-      id: 1, 
-      txt: "Hi there! My name is Eleftherios Merkouriou,"
-    },
-    {
-      id: 2, 
-      txt: "Ελευθέριος Μερκουρίου in Greek."
-    },
-    {
-      id: 3,
-      txt: "I'm a Frontend Developer from Greece",
-      //icon: <span class="fi fi-gr"></span>
-    },
-    {
-      id: 4,
-      txt: "and I love creating with React JS.",
-    }
+    "Hi there! My name is Eleftherios Merkouriou,",
+    "<span class='italic'>Ελευθέριος Μερκουρίου</span> in Greek.", 
+    "I'm a Frontend Developer from Greece", 
+    "and I love creating with React JS."
   ];
 
   const personalInfo = [
@@ -51,7 +38,7 @@ export default function About() {
     <div id="About" className="about text-white px-4 flex flex-col gap-y-14">
       <div className="text-lg flex flex-col gap-y-2 items-center md:items-end md:mr-20">
         <PiHandWavingDuotone className="text-2xl"/>
-        {about.map((paragraph) => <p key={paragraph.id} className="text-center md:text-right">{paragraph.txt} {paragraph.icon ? paragraph.icon : ''}</p>)}
+        {about.map((paragraph, index) => <p key={index} className="text-center md:text-right" dangerouslySetInnerHTML={{__html: paragraph}} />)}
       </div>
       <div className="flex flex-col border rounded-xl border-slate-600 p-5 max-w-fit md:ml-20 m-auto">
         <div className="font-medium text-2xl mb-3">Some infos...</div>

@@ -60,7 +60,7 @@ export default function Experience() {
         <div className="experience">
             <div className="flex flex-col items-center gap-y-5 xs:gap-y-0">
                 {experience.map((exp, i, {length}) => 
-                    <div className="flex flex-col items-center">
+                    <div key={i} className="flex flex-col items-center">
                         <div key={exp.id} className="w-96 flex flex-col xs:rounded-2xl xs:border-slate-300 xs:border-2 p-4">
                             <div className="right-4 font-semibold text-slate-300 text-md text-end italic">{exp.duration}</div>
                             <div className='flex items-center text-white mb-2'>
@@ -76,8 +76,8 @@ export default function Experience() {
                             </div>
                             <div className='text-white'>
                                 <div className='flex flex-col gap-2'>
-                                    {exp.tasks.map( task =>
-                                        <div className="flex items-top">
+                                    {exp.tasks.map((task, index) =>
+                                        <div key={index} className="flex items-top">
                                             <FaAngleRight className="mr-1 basis-1/12 mt-0.5" />
                                             <div className="basis-11/12 leading-5" key={task.id}>{task.text}</div>
                                         </div>
@@ -85,8 +85,8 @@ export default function Experience() {
                                 </div>
                             </div>
                         </div>
-                        {!(length - 1 === i) && <div class="h-12 w-0.5 bg-slate-300 hidden xs:flex"></div>}
-                        {!(length - 1 === i) && <div class="h-0.5 w-full bg-slate-300 flex mt-6 xs:hidden"></div>}
+                        {!(length - 1 === i) && <div className="h-12 w-0.5 bg-slate-300 hidden xs:flex"></div>}
+                        {!(length - 1 === i) && <div className="h-0.5 w-full bg-slate-300 flex mt-6 xs:hidden"></div>}
                     </div>
                 )}
             </div>
