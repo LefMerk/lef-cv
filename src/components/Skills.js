@@ -1,16 +1,17 @@
 import Rating from './Rating';
 
 //dev logos
-import { SiJavascript, SiVuedotjs, SiReact, SiBootstrap, SiTailwindcss, SiGit, SiSubversion, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiElectron } from "react-icons/si";
+import { SiJavascript, SiVuedotjs, SiReact, SiBootstrap, SiTailwindcss, SiGit, SiSubversion, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiElectron, SiNextdotjs } from "react-icons/si";
 import { DiJqueryLogo, DiHtml5, DiCss3, DiSass, DiDotnet } from "react-icons/di";
-import { AjaxIcon, TauriIcon } from './CustomIcon';
+import { AjaxIcon, TauriIcon, MuiIcon } from './CustomIcon';
 
 const categories = [
   {
     name:'Coding', 
     skill: [
       {name: 'JavaScript', icon: <SiJavascript />, rating: 5},
-      {name: 'React', icon: <SiReact />, rating: 4},
+      {name: 'React JS', icon: <SiReact />, rating: 4},
+      {name: 'Next JS', icon: <SiNextdotjs />, rating: 3},
       {name: 'Vue JS', icon: <SiVuedotjs />, rating: 2}, 
       {name: 'jQuery', icon: <DiJqueryLogo />, rating: 5},
       {name: 'AJAX', icon: <AjaxIcon />, rating: 5},
@@ -23,7 +24,8 @@ const categories = [
       {name: 'CSS', icon: <DiCss3 />, rating: 5},
       {name: 'SASS', icon: <DiSass />, rating: 5},
       {name: 'Bootstrap', icon: <SiBootstrap />, rating: 5},
-      {name: 'Tailwind', icon: <SiTailwindcss />, rating: 5}
+      {name: 'Tailwind', icon: <SiTailwindcss />, rating: 5},
+      {name: 'Material UI', icon: <MuiIcon />, rating: 4},
     ]
   },
   {
