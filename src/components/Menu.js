@@ -27,7 +27,7 @@ export default function Menu() {
                     <img src={logo} alt="Logo" className='h-10 rounded-lg border-2 border-slate-300'/>
                     <div className='flex flex-col text-slate-50 ml-3 items-center md:items-start'>
                         <h1 className="font-semibold text-lg">Eleftherios Merkouriou</h1>
-                        <h2 className="font-light">Front End Developer</h2>
+                        <h2 className="font-light">Frontend Developer</h2>
                     </div>
                     <div className='flex justify-end grow'>
                         <div className='flex items-center justify-end grow gap-x-5 xs:gap-x-8 text-lg xs:text-xl mt-5 md:mt-0'>

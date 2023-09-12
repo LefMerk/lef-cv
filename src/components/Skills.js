@@ -64,7 +64,7 @@ export default function Skills() {
 
   return (
     <div id="Skills" className="skills">
-      <div className="flex flex-wrap justify-evenly gap-5 text-sm text-white z-10">
+      <div className="flex flex-wrap justify-center gap-7 text-sm text-white z-10">
         {categories.map((category) => 
           <div key={category.name} className='max-w-fit flex flex-col p-4 gap-2 border rounded-xl border-slate-600'>
             <span className='mb-2.5 font-semibold text-lg'>{category.name}</span>
