@@ -1,7 +1,7 @@
 import Rating from './Rating';
 
 //dev logos
-import { SiJavascript, SiVuedotjs, SiReact, SiBootstrap, SiTailwindcss, SiGit, SiSubversion, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiElectron, SiNextdotjs } from "react-icons/si";
+import { SiRedux, SiJavascript, SiVuedotjs, SiReact, SiBootstrap, SiTailwindcss, SiGit, SiSubversion, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiElectron, SiNextdotjs } from "react-icons/si";
 import { DiJqueryLogo, DiHtml5, DiCss3, DiSass, DiDotnet } from "react-icons/di";
 import { AjaxIcon, TauriIcon, MuiIcon } from './CustomIcon';
 
@@ -12,7 +12,8 @@ const categories = [
       {name: 'JavaScript', icon: <SiJavascript />, rating: 5},
       {name: 'React JS', icon: <SiReact />, rating: 4},
       {name: 'Next JS', icon: <SiNextdotjs />, rating: 3},
-      {name: 'Vue JS', icon: <SiVuedotjs />, rating: 2}, 
+      {name: 'Vue JS', icon: <SiVuedotjs />, rating: 2},
+      {name: 'Redux JS', icon: <SiRedux />, rating: 3}, 
       {name: 'jQuery', icon: <DiJqueryLogo />, rating: 5},
       {name: 'AJAX', icon: <AjaxIcon />, rating: 5},
     ]
