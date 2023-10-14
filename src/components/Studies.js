@@ -1,7 +1,16 @@
 import unipi from '../assets/unipi.png';
+import udacity from '../assets/udacity.png';
 
 export default function Studies() {
   const studies = [
+    {
+      id: 'nanodegree',
+      img: udacity,
+      link: 'https://www.udacity.com/course/react-nanodegree--nd019',
+      name: 'Udacity',
+      title: 'React Nanodegree Program',
+      duration: '2023'
+    },
     { 
       id: 'msc',
       img: unipi,
@@ -33,7 +42,7 @@ export default function Studies() {
               <a href={study.link} target='_blank' rel="noreferrer nofollow">
                 <div>{study.name}</div>
               </a>
-              <div className='italic'>{study.duration}</div>
+              <div className='italic text-sm font-light '>{study.duration}</div>
             </div>
           </div>
         )}

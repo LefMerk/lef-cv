@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { ComponentContext } from '../App';
 import logo from '../assets/logo.png';
 
