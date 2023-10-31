@@ -35,7 +35,7 @@ export default function About() {
   ];
 
   return (
-    <div id="About" className="about text-white px-4 flex flex-col gap-y-14">
+    <div id="About" className="about text-white px-4 flex flex-col gap-y-8">
       <div className="text-lg flex flex-col gap-y-2 items-center md:items-end md:mr-20">
         <PiHandWavingDuotone className="text-2xl"/>
         {about.map((paragraph, index) => <p key={index} className="text-center md:text-right" dangerouslySetInnerHTML={{__html: paragraph}} />)}

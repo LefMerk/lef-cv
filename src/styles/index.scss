@@ -25,8 +25,7 @@ $light-hover-color: #bef52d;
 $white: #ffffff;
 $bg-header: #e1dede;
 
-@import 'Menu', 
-        'Footer';
+@import 'Menu';
 
 html { 
   scroll-behavior: smooth;

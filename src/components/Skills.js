@@ -67,7 +67,7 @@ export default function Skills() {
 
   return (
     <div id="Skills" className="skills">
-      <div className="flex flex-col flex-wrap items-center justify-center gap-11 px-14 text-sm text-white z-10 md:max-h-[55rem] xl:max-h-[33rem]">
+      <div className="flex flex-col flex-wrap items-center justify-center gap-11 sm:px-14 text-sm text-white z-10 md:max-h-[55rem] xl:max-h-[33rem]">
         {categories.map((category) => 
           <div key={category.name} className='max-w-fit h-fit flex flex-col p-4 gap-2 border rounded-xl border-[#bef52d80] shadow-[3px_3px_0px_0px_#bef52d] transition-transform hover:bg-[#ffffff1a] hover:scale-105'>
             <span className='mb-2.5 font-semibold text-lg'>{category.name}</span>
