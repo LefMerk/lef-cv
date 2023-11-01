@@ -58,35 +58,40 @@ export default function Experience() {
 
     return (
         <div className="experience">
-            <div className="flex flex-col items-center gap-y-5 xs:gap-y-0">
+            <div className="hidden rg:block text-[#bef52d80] text-2xl font-bold text-center ps-3">{new Date().getFullYear()}</div>
+            <div className="flex flex-col max-md:items-center gap-y-5 xs:max-rg:gap-y-0 xs:gap-y-5 lg:px-20 px-4 after:content-[] rg:after:content-[''] after:h-[calc(100%-3rem)] after:w-3 after:bg-[#bef52d80] after:rounded after:absolute after:left-1/2 ">
                 {experience.map((exp, i, {length}) => 
-                    <div key={i} className="flex flex-col items-center">
-                        <div key={exp.id} className="w-96 flex flex-col xs:rounded-2xl xs:border-slate-300 xs:border-2 p-4">
-                            <div className="right-4 font-semibold text-slate-300 text-md text-end italic">{exp.duration}</div>
-                            <div className='flex items-center text-white mb-2'>
-                                <a className="basis-1/6" href={exp.link} target='_blank' rel="noreferrer nofollow">
-                                    <img className='w-11 h-11 rounded-md grow' src={exp.img} alt={exp.id} />
-                                </a>
-                                <div className='basis-5/6 flex flex-col text-lg px-2 py-3'>
-                                    <div className="font-medium">{exp.job}</div>
-                                    <a href={exp.link} target='_blank' rel="noreferrer nofollow">
-                                        <div className='text-slate-300 text-base leading-5'>{exp.name}</div>
+                    <div key={i} className="flex flex-col rg:flex-row w-full rg:w-1/2 rg:odd:self-end rg:even:self-start items-center">
+                        {i%2 === 0 && <div className="hidden rg:block ms-3 h-1 w-[calc(100%-10px)] bg-[#bef52d80]"></div>}
+                        <div className="flex flex-col max-rg:items-center ">
+                            <div className="w-96 rg:basis-3/4 flex flex-col xs:rounded-2xl xs:border xs:border-[#bef52d80] xs:shadow-[3px_3px_0px_0px_#bef52d] p-4">
+                                <div className="right-4 font-semibold text-slate-300 text-md text-end italic">{exp.duration}</div>
+                                <div className='flex items-center text-white mb-2'>
+                                    <a className="basis-1/6" href={exp.link} target='_blank' rel="noreferrer nofollow">
+                                        <img className='w-11 h-11 rounded-md grow' src={exp.img} alt={exp.id} />
                                     </a>
+                                    <div className='basis-5/6 flex flex-col text-lg px-2 py-3'>
+                                        <div className="font-medium">{exp.job}</div>
+                                        <a href={exp.link} target='_blank' rel="noreferrer nofollow">
+                                            <div className='text-slate-300 text-base leading-5'>{exp.name}</div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='text-white'>
-                                <div className='flex flex-col gap-2'>
-                                    {exp.tasks.map((task, index) =>
-                                        <div key={index} className="flex items-top">
-                                            <FaAngleRight className="mr-1 basis-1/12 mt-0.5" />
-                                            <div className="basis-11/12 leading-5" key={task.id}>{task.text}</div>
-                                        </div>
-                                    )}
+                                <div className='text-white'>
+                                    <div className='flex flex-col gap-2'>
+                                        {exp.tasks.map((task, index) =>
+                                            <div key={index} className="flex items-top">
+                                                <FaAngleRight className="mr-1 basis-1/12 mt-0.5" />
+                                                <div className="basis-11/12 leading-5" key={task.id}>{task.text}</div>
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        {!(length - 1 === i) && <div className="h-12 w-0.5 bg-slate-300 hidden xs:flex"></div>}
-                        {!(length - 1 === i) && <div className="h-0.5 w-full bg-slate-300 flex mt-6 xs:hidden"></div>}
+                        {i%2 !== 0 && <div className="hidden rg:block h-1 w-[calc(100%-10px)] bg-[#bef52d80]"></div>}
+                        {!(length - 1 === i) && <div className="h-12 w-1 bg-[#bef52d80] hidden xs:max-rg:flex"></div>}
+                        {!(length - 1 === i) && <div className="h-1 w-full bg-[#bef52d80] flex mt-6 xs:hidden"></div>}
                     </div>
                 )}
             </div>
