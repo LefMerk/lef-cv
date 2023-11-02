@@ -1,4 +1,6 @@
 import { FaAngleRight } from "react-icons/fa6";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import upcom from '../assets/upcom.png';
 import hedno from '../assets/hedno.png';
 import prime from '../assets/prime.png';
@@ -14,8 +16,8 @@ export default function Experience() {
             duration: 'Nov 2022 - Present', 
             job: 'Front End Developer', 
             tasks: [
-                {id: 1, text: 'SAV Project'},
-                {id: 2, text: 'Web application for APE or SITHIA station'}
+                {id: 1, text: 'SAV web application'},
+                {id: 2, text: 'APE and SITHIA station web application'}
             ]
         },
         {
@@ -58,11 +60,13 @@ export default function Experience() {
 
     return (
         <div className="experience">
-            <div className="hidden rg:block text-[#bef52d80] text-2xl font-bold text-center ps-3">{new Date().getFullYear()}</div>
-            <div className="flex flex-col max-md:items-center gap-y-5 xs:max-rg:gap-y-0 xs:gap-y-5 lg:px-20 px-4 after:content-[] rg:after:content-[''] after:h-[calc(100%-3rem)] after:w-3 after:bg-[#bef52d80] after:rounded after:absolute after:left-1/2 ">
+            <div className="hidden rg:flex text-[#bef52d80] text-4xl font-black justify-center ps-2 h-8">
+                <FontAwesomeIcon icon={faChevronUp} size="xl" style={{color: "#bef52d80",}} />
+            </div>
+            <div className="flex flex-col max-md:items-center gap-y-5 xs:max-rg:gap-y-0 xs:gap-y-5 lg:px-20 px-4 after:content-[] rg:after:content-[''] after:h-[calc(100%-3rem)] after:w-2 after:bg-[#bef52d80] after:rounded after:absolute after:left-1/2 ">
                 {experience.map((exp, i, {length}) => 
                     <div key={i} className="flex flex-col rg:flex-row w-full rg:w-1/2 rg:odd:self-end rg:even:self-start items-center">
-                        {i%2 === 0 && <div className="hidden rg:block ms-3 h-1 w-[calc(100%-10px)] bg-[#bef52d80]"></div>}
+                        {i%2 === 0 && <div className="hidden rg:block ms-2 h-1 w-[calc(100%-10px)] bg-[#bef52d80]"></div>}
                         <div className="flex flex-col max-rg:items-center ">
                             <div className="w-96 rg:basis-3/4 flex flex-col xs:rounded-2xl xs:border xs:border-[#bef52d80] xs:shadow-[3px_3px_0px_0px_#bef52d] p-4">
                                 <div className="right-4 font-semibold text-slate-300 text-md text-end italic">{exp.duration}</div>
