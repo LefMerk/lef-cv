@@ -2,7 +2,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Studies from "./Studies";
-import Projects from "./Projects";
+import Projects from "./Project";
 import Find from "./Find";
 import { ComponentContext } from "../App";
 import { useState, useContext } from "react";
