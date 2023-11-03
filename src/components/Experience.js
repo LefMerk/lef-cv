@@ -41,7 +41,9 @@ export default function Experience() {
             tasks: [
                 {
                     id: 1, 
-                    text: 'Assigned to Hellenic Electricity Distribution Network Operator S.A. (HEDNO)'
+                    text: 'Assigned to Hellenic Electricity Distribution Network Operator S.A. (HEDNO)',
+                    description: 'Coming soon...',
+                    technologies: 'Coming soon...'
                 }
             ]
         },
@@ -55,15 +57,21 @@ export default function Experience() {
             tasks: [
                 {
                     id: 1, 
-                    text: 'All MM Educational Group websites'
+                    text: 'All MM Educational Group websites',
+                    description: 'Coming soon...',
+                    technologies: 'Coming soon...'
                 },
                 {
                     id: 2, 
-                    text: 'Frontend team guidance'
+                    text: 'Frontend team guidance',
+                    description: 'Coming soon...',
+                    technologies: 'Coming soon...'
                 },
                 {
                     id: 3, 
-                    text: 'Frontend tasks & projects assignment'
+                    text: 'Frontend tasks & projects assignment',
+                    description: 'Coming soon...',
+                    technologies: 'Coming soon...'
                 }
             ]
         },
@@ -77,11 +85,15 @@ export default function Experience() {
             tasks: [
                 {
                     id: 1, 
-                    text: 'Educational HTML Games'
+                    text: 'Educational HTML Games',
+                    description: 'Coming soon...',
+                    technologies: 'Coming soon...'
                 },
                 {
                     id: 2, 
-                    text: 'Interactive WhiteBoards (IWB) - Educational Software'
+                    text: 'Interactive WhiteBoards (IWB) - Educational Software',
+                    description: 'Coming soon...',
+                    technologies: 'Coming soon...'
                 }
             ]
         },
@@ -92,7 +104,7 @@ export default function Experience() {
             <div className="hidden rg:flex text-[#bef52d80] text-4xl font-black justify-center ps-2 h-8">
                 <FontAwesomeIcon icon={faChevronUp} size="xl" style={{color: "#bef52d80",}} />
             </div>
-            <div className="flex flex-col max-md:items-center gap-y-5 xs:max-rg:gap-y-0 xs:gap-y-5 lg:px-20 px-4 after:content-[] rg:after:content-[''] after:h-[95%] after:w-2 after:bg-[#bef52d80] after:rounded after:absolute after:left-1/2 ">
+            <div className="flex flex-col relative overflow-hidden pb-2 max-md:items-center gap-y-5 xs:max-rg:gap-y-0 xs:gap-y-5 lg:px-20 px-4 after:content-[] rg:after:content-[''] after:h-full after:w-2 after:bg-[#bef52d80] after:rounded after:absolute after:left-1/2 ">
                 {experience.map((exp, i, {length}) => 
                     <div key={i} className="flex flex-col rg:flex-row w-full rg:w-1/2 rg:odd:self-end rg:even:self-start items-center">
                         {i%2 === 0 && <div className="hidden rg:block ms-2 h-1 w-[calc(100%-10px)] bg-[#bef52d80]"></div>}
