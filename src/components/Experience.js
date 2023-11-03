@@ -41,9 +41,9 @@ export default function Experience() {
             tasks: [
                 {
                     id: 1, 
-                    text: 'Assigned to Hellenic Electricity Distribution Network Operator S.A. (HEDNO)',
-                    description: 'Coming soon...',
-                    technologies: 'Coming soon...'
+                    text: 'Seconded to Hellenic Electricity Distribution Network Operator S.A. (HEDNO)',
+                    description: 'Contributed to critical projects and assisted to the digitalization of the HEDNO\'s business processes and the development of new digital services for the company\'s customers.',
+                    technologies: 'JavaScript, React JS, jQuery, CSS, SASS, HTML'
                 }
             ]
         },
@@ -58,20 +58,20 @@ export default function Experience() {
                 {
                     id: 1, 
                     text: 'All MM Educational Group websites',
-                    description: 'Coming soon...',
-                    technologies: 'Coming soon...'
+                    description: 'Managed and maintained all MM Educational Group websites, ensuring optimal functionality, content updates, and user experience across the digital platform. Some of them are: mmpublications.gr, mmpublications.com, mmedugroup.com, mymm.group, thehub.eltschool.com, vectormsint.com, mmplacement.com, mmeduzb.com, eltplatform.com',
+                    technologies: 'JavaScript, jQuery, CSS, SASS, Bootstrap, HTML - C#, ASP.NET MVC, ASP.NET Core, ASP.NET Razor'
                 },
                 {
                     id: 2, 
                     text: 'Frontend team guidance',
-                    description: 'Coming soon...',
-                    technologies: 'Coming soon...'
+                    description: 'Provided guidance and leadership to the frontend team, fostering a collaborative environment and driving the successful execution of web development projects.',
+                    technologies: 'Code-along sessions, Code reviews, Atlassian Trello'
                 },
                 {
                     id: 3, 
-                    text: 'Frontend tasks & projects assignment',
-                    description: 'Coming soon...',
-                    technologies: 'Coming soon...'
+                    text: 'Frontend tasks & projects assignment to team members',
+                    description: 'Delegated frontend tasks and projects to team members, ensuring effective project management and successful delivery of web development initiatives.',
+                    technologies: 'Atlassian Trello'
                 }
             ]
         },
