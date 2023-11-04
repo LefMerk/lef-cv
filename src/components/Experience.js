@@ -86,14 +86,14 @@ export default function Experience() {
                 {
                     id: 1, 
                     text: 'Educational HTML Games',
-                    description: 'Coming soon...',
-                    technologies: 'Coming soon...'
+                    description: 'Designed and programmed engaging educational HTML games that combined fun and learning for students of all ages. These interactive games served as effective tools for reinforcing educational concepts and fostering a playful learning environment.',
+                    technologies: 'JavaScript, jQuery, CSS, HTML'
                 },
                 {
                     id: 2, 
                     text: 'Interactive WhiteBoards (IWB) - Educational Software',
-                    description: 'Coming soon...',
-                    technologies: 'Coming soon...'
+                    description: 'Developed and implemented Interactive WhiteBoard (IWB) educational software, enhancing classroom engagement and facilitating dynamic teaching experiences. This software empowered educators with innovative tools to deliver impactful lessons and promote interactive learning.',
+                    technologies: 'JavaScript, jQuery, CSS, HTML'
                 }
             ]
         },
