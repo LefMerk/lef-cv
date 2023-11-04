@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronUp, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import upcom from '../assets/upcom.png';
 import hedno from '../assets/hedno.png';
 import prime from '../assets/prime.png';
@@ -101,7 +101,7 @@ export default function Experience() {
 
     return (
         <div className="experience">
-            <div className="hidden rg:flex text-[#bef52d80] text-4xl font-black justify-center ps-2 h-8">
+            <div className="hidden rg:flex text-[#bef52d80] text-4xl font-black justify-center ps-2 h-8 animate__animated animate__fadeInUpBig">
                 <FontAwesomeIcon icon={faChevronUp} size="xl" style={{color: "#bef52d80",}} />
             </div>
             <div className="flex flex-col relative overflow-hidden pb-2 max-md:items-center gap-y-5 xs:max-rg:gap-y-0 xs:gap-y-5 lg:px-20 px-4 after:content-[] rg:after:content-[''] after:h-full after:w-2 after:bg-[#bef52d80] after:rounded after:absolute after:left-1/2 ">
