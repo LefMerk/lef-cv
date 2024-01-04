@@ -4,17 +4,29 @@ import upcom from '../assets/upcom.png';
 import hedno from '../assets/hedno.png';
 import prime from '../assets/prime.png';
 import focus from '../assets/focus.png';
+import softone from '../assets/softone.png';
 import Project from "./Project";
 
 export default function Experience() {
 
     const experience = [
         {
+            id: 'softone',
+            img: softone,
+            name: 'SoftOne Technologies S.A.',
+            link: 'https://www.softone.gr/',
+            duration: 'Jan 2024 - Present', 
+            job: 'Front End Developer', 
+            tasks: [
+                
+            ]
+        },
+        {
             id: 'hedno',
             img: hedno,
             name: 'Hellenic Electricity Distribution Network Operator S.A. (HEDNO)',
             link: 'https://deddie.gr/en/',
-            duration: 'Nov 2022 - Present', 
+            duration: 'Nov 2022 - Dec 2023', 
             job: 'Front End Developer', 
             tasks: [
                 {
@@ -36,7 +48,7 @@ export default function Experience() {
             img: upcom,
             name: 'UpcoMinds S.A.',
             link: 'https://upcominds.com/',
-            duration: 'Nov 2022 - Present', 
+            duration: 'Nov 2022 - Dec 2023', 
             job: 'Front End Developer', 
             tasks: [
                 {
