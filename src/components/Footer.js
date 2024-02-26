@@ -1,6 +1,3 @@
-import { IoMdImages } from "react-icons/io";
-import { VscGithub } from "react-icons/vsc";
-import { SiMaildotru } from "react-icons/si";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoLogoGithub } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";

@@ -5,7 +5,7 @@ import Studies from "./Studies";
 import Projects from "./Project";
 import Find from "./Find";
 import { ComponentContext } from "../App";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 
 export default function Components() {
     const { state } = useContext(ComponentContext);

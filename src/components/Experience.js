@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp, faCaretUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import upcom from '../assets/upcom.png';
 import hedno from '../assets/hedno.png';
 import prime from '../assets/prime.png';
@@ -18,7 +18,12 @@ export default function Experience() {
             duration: 'Jan 2024 - Present', 
             job: 'Front End Developer', 
             tasks: [
-                
+                {
+                    id: 1, 
+                    text: 'Web ERP', 
+                    description: 'A web-based ERP project for enterprise resource planning designed to streamline business operations. It offers seamless integration of key processes including accounting, inventory management, human resources, and customer relationship management.', 
+                    technologies: 'React JS, Redux JS, Material UI, CSS'
+                },
             ]
         },
         {
