@@ -4,14 +4,14 @@ import stockholm from '../assets/stockholm.png';
 
 export default function Studies() {
   const studies = [
-    {
-      id: 'bsc2',
-      img: stockholm,
-      link: 'https://www.su.se/english/',
-      name: 'Stockholm University',
-      title: 'One Year Master\'s Programme in IT Project Management',
-      duration: '2024 - present'
-    },
+    // {
+    //   id: 'bsc2',
+    //   img: stockholm,
+    //   link: 'https://www.su.se/english/',
+    //   name: 'Stockholm University',
+    //   title: 'One Year Master\'s Programme in IT Project Management',
+    //   duration: '2024 - present'
+    // },
     {
       id: 'nanodegree',
       img: udacity,

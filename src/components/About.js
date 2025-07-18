@@ -30,7 +30,7 @@ export default function About() {
     },
     {
       icon: <PiAirplaneTiltBold/>,
-      countries: ['fr', 'it', 'va', 'tr', 'bg', 'nl', 'hu', 'at', 'sk', 'fi', 'ee', 'be', 'lu', 'pl']
+      countries: ['fr', 'it', 'va', 'tr', 'bg', 'nl', 'hu', 'at', 'sk', 'fi', 'ee', 'be', 'lu', 'pl', 'pt']
     }
   ];
 
