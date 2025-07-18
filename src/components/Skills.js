@@ -1,9 +1,27 @@
 import Rating from './Rating';
 
 //dev logos
-import { SiRedux, SiJavascript, SiTypescript, SiVuedotjs, SiReact, SiBootstrap, SiTailwindcss, SiGit, SiSubversion, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiElectron, SiNextdotjs, SiJest } from "react-icons/si";
+import { 
+  SiRedux, 
+  SiJavascript, 
+  SiTypescript, 
+  SiVuedotjs, 
+  SiReact, 
+  SiBootstrap, 
+  SiTailwindcss, 
+  SiGit, 
+  SiSubversion, 
+  SiAdobephotoshop, 
+  SiAdobeillustrator, 
+  SiAdobexd, 
+  SiElectron, 
+  SiNextdotjs, 
+  SiJest, 
+  SiReacthookform, 
+  SiDevexpress, 
+  SiVitest } from "react-icons/si";
 import { DiJqueryLogo, DiHtml5, DiCss3, DiSass, DiDotnet } from "react-icons/di";
-import { AjaxIcon, TauriIcon, MuiIcon } from './CustomIcon';
+import { AjaxIcon, TauriIcon, MuiIcon, ZustandIcon } from './CustomIcon';
 
 const categories = [
   {
@@ -14,10 +32,19 @@ const categories = [
       {name: 'React JS', icon: <SiReact />, rating: 4},
       {name: 'Next JS', icon: <SiNextdotjs />, rating: 3},
       {name: 'Vue JS', icon: <SiVuedotjs />, rating: 2},
-      {name: 'Redux JS', icon: <SiRedux />, rating: 4},
-      {name: 'Jest', icon: <SiJest />, rating: 4},
       {name: 'jQuery', icon: <DiJqueryLogo />, rating: 5},
       {name: 'AJAX', icon: <AjaxIcon />, rating: 5},
+    ]
+  },
+  {
+    name:'Libraries', 
+    skill: [
+      {name: 'React Hook Form', icon: <SiReacthookform />},
+      {name: 'DevExpress', icon: <SiDevexpress />},
+      {name: 'Redux JS', icon: <SiRedux />},
+      {name: 'Zustand', icon: <ZustandIcon />},
+      {name: 'Vitest', icon: <SiVitest />},
+      {name: 'Jest', icon: <SiJest />},
     ]
   },
   {
@@ -67,7 +94,7 @@ export default function Skills() {
 
   return (
     <div id="Skills" className="skills">
-      <div className="flex flex-col flex-wrap items-center justify-center gap-11 sm:px-14 text-sm text-white z-10 md:max-h-[55rem] xl:max-h-[33rem]">
+      <div className="flex flex-col flex-wrap items-center justify-center gap-11 sm:px-14 text-sm text-white z-10 md:max-h-[60rem] xl:max-h-[40rem]">
         {categories.map((category) => 
           <div key={category.name} className='max-w-fit h-fit flex flex-col p-4 gap-2 border rounded-xl border-[#bef52d80] shadow-[3px_3px_0px_0px_#bef52d] transition-transform hover:bg-[#ffffff1a] hover:scale-105'>
             <span className='mb-2.5 font-semibold text-lg'>{category.name}</span>

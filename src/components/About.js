@@ -11,7 +11,7 @@ export default function About() {
   const about = [
     "Hi there! My name is Eleftherios Merkouriou,",
     "<span class='italic'>Ελευθέριος Μερκουρίου</span> in Greek.", 
-    "I'm a Frontend Developer from Greece", 
+    "I'm a Senior Frontend React Developer from Greece", 
     "and I love creating with React JS."
   ];
 
