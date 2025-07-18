@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faCircle as faSolidCircle } from '@fortawesome/free-solid-svg-icons'
+import { faCircle as faRegularCircle } from '@fortawesome/free-regular-svg-icons'
 
-export default function Rating( {name, icon, rating} ) {
-  const full = <FontAwesomeIcon icon={solid("circle")} />;
-  const empty = <FontAwesomeIcon icon={regular("circle")} />;
+export default function Rating({ name, icon, rating }) {
+  const full = <FontAwesomeIcon icon={faSolidCircle} />;
+  const empty = <FontAwesomeIcon icon={faRegularCircle} />;
   let starRating = [];
 
   for (let i = 0; i < 5; i++) {
-    starRating.push( i < rating ? full : empty );
+    starRating.push(i < rating ? full : empty);
   }
 
   return (
